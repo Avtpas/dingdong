@@ -1,0 +1,112 @@
+body{
+    padding:0;
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    width:2px;
+    height:2px;
+}
+
+#app{
+    display: flex;
+    height: 100%;
+
+    border-radius:3px;
+}
+*{
+    transition: all .3s;
+}
+.chat-list ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    overflow:auto;
+    max-height:100%;
+}
+.chat-list li{
+    display:flex;
+}
+.chat-list-item{
+    padding:10px !important;
+}
+.chat-list-item.active{
+    background-color: #BBB;
+}
+.chat-list-item:hover{
+    background-color: #BBB;
+}
+.chat-list-item .who{
+    font-size:14px;
+    height:40px;
+    padding-left:10px;
+    width:-webkit-calc(100% - 110px);
+}
+.chat-list-item .who>div{
+    line-height: 20px;
+    height:20px;
+}
+
+.chat-list-item>.time{
+    right:0;
+    width:50px;
+}
+.chat-list-item.active{
+    background-color: #BBB;
+}
+.chat-list-item>header{
+    width:40px;
+    height:40px;
+}
+.chat-list-item>header>img{
+    width:100%;
+}
+.search-bar{
+    display:flex;
+    padding:15px;
+}
+.search-bar>input{
+    outline:none;
+    border:1px solid #ccc;
+    width:100%;
+    padding-left:5px;
+}
+.search-bar>button{
+    margin-left:10px
+}
+
+.left-bar nav.active{
+    -webkit-filter: drop-shadow(0 1px 5px lightgreen);
+}
+.left-bar nav{
+
+}
+.head-pic,.head-pic>img{
+    width:30px;
+    height:30px;
+    margin:10px;
+    border-radius: 3px;
+    cursor:pointer;
+
+}
+.left-bar{
+    background-color:#444;
+    width:50px;
+    bottom:0;
+    top:0;
+    border-radius:3px 0  0 3px ;
+}
+.mid-bar{
+    width:250px;
+    background-color:#EEE ;
+    border:1px solid #CCC;
+}
+.mid-bar>.content{
+    height:-webkit-calc(100% - 60px)
+}
+.right-bar{
+    border-radius: 0 3px 3px 0;
+    background-color:#EFEFEF;
+    border:1px solid #CCC;
+    border-left:none;
+    width:-webkit-calc(100% - 300px);
+}
