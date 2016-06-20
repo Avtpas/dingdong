@@ -1,2 +1,2 @@
 # dingdong
-weChatPC-like IM based on Seajs&amp;React etc. (just for fun)
+weChatPC-like IM based on webpack & React etc. (just for fun,no serious :P )
